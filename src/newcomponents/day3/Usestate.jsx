@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Router, useNavigate } from "react-router-dom";
 
 function Usestate(){
+    const router = useNavigate();
     const [counter,setcounter] = useState(1);
     console.log(counter,"counter");
     function Incremnet(){
@@ -14,6 +16,9 @@ function Usestate(){
     function Reset(){
         setcounter(1)
     }
+    function gotodynamicpage(){
+        router(`/Dynamicrouting/${counter}`)
+    }
     
     return(
         <div>
@@ -21,6 +26,7 @@ function Usestate(){
             <button onClick={Incremnet}>+</button>
             <button onClick={Reset}>Reset</button>
             <button onClick={Decrement}>-</button>
+            <button onClick={gotodynamicpage}>gotodynamicpage</button>
         </div>
     )
 }

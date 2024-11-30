@@ -11,12 +11,16 @@ function Home(){
     function redirecttousestatepage(){
         router("/use-state");
     };
+    function gotodynamicpage(){
+        router("/Dynamicrouting/1");
+    };
     return(
         <div>
         <h1>Home</h1>
         <button onClick={redirecttologinpage}>Go to login </button>
         <button onClick={redirecttoregisterpage}>Go to register </button>
         <button onClick={redirecttousestatepage}>Go to usestate</button>
+        <button onClick={gotodynamicpage}>Dynamic data</button>
         </div>
     )
     
