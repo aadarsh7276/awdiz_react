@@ -14,6 +14,8 @@ import { useState } from "react";
 import Fakeproducts from "./newcomponents/day8/fakeproducts";
 import Dynamiccss from "./newcomponents/day9/Dynamiccss";
 import Usereducer from "./newcomponents/day9/Usereducer";
+import UseCallback from "./newcomponents/day12/UseCallback";
+import CounterContext from "./newcomponents/day10/CounterContext";
 
 function App() {
   const[students,setStudent] = useState(["rohit","rahul","virat"])
@@ -37,6 +39,8 @@ function App() {
         <Route path="/get-all-fake-products" element={<Fakeproducts/>} />
         <Route path="/dynamic-css" element={<Dynamiccss/>} />
         <Route path="/use-reducer" element={<Usereducer/>} />
+        <Route path="/use-callback" element={<UseCallback/>} />
+        <Route path="/counter-context" element={<CounterContext/>} />
 
     
       </Routes>
