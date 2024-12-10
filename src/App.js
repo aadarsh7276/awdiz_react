@@ -16,6 +16,8 @@ import Dynamiccss from "./newcomponents/day9/Dynamiccss";
 import Usereducer from "./newcomponents/day9/Usereducer";
 import UseCallback from "./newcomponents/day12/UseCallback";
 import CounterContext from "./newcomponents/day10/CounterContext";
+import UseRef from "./newcomponents/day13/UseRef";
+import ReduxCounter from "./newcomponents/day14/ReduxCounter";
 
 function App() {
   const[students,setStudent] = useState(["rohit","rahul","virat"])
@@ -41,6 +43,8 @@ function App() {
         <Route path="/use-reducer" element={<Usereducer/>} />
         <Route path="/use-callback" element={<UseCallback/>} />
         <Route path="/counter-context" element={<CounterContext/>} />
+        <Route path="/use-ref" element={<UseRef/>} />
+        <Route path="/redux-counter" element={<ReduxCounter/>} />
 
     
       </Routes>
