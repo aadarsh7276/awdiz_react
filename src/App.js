@@ -18,6 +18,7 @@ import UseCallback from "./newcomponents/day12/UseCallback";
 import CounterContext from "./newcomponents/day10/CounterContext";
 import UseRef from "./newcomponents/day13/UseRef";
 import ReduxCounter from "./newcomponents/day14/ReduxCounter";
+import CounterContext1 from "./newcomponents/day15/CounterContext1";
 
 function App() {
   const[students,setStudent] = useState(["rohit","rahul","virat"])
@@ -45,6 +46,7 @@ function App() {
         <Route path="/counter-context" element={<CounterContext/>} />
         <Route path="/use-ref" element={<UseRef/>} />
         <Route path="/redux-counter" element={<ReduxCounter/>} />
+        <Route path="/counter-context1" element={<CounterContext1/>} />
 
     
       </Routes>

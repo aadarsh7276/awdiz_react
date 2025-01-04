@@ -15,9 +15,11 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <ParentCounterContext>
+      <parentCounterContext1>
       <Provider store={store}>
       <App />
       </Provider>
+      </parentCounterContext1>
       </ParentCounterContext>
     </BrowserRouter>
   </React.StrictMode>
